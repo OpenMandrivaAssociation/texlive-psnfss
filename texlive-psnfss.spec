@@ -197,6 +197,7 @@ packages.
 %doc %{_texmfdistdir}/source/latex/psnfss/psfonts.dtx
 %doc %{_texmfdistdir}/source/latex/psnfss/psfonts.ins
 %doc %{_texmfdistdir}/source/latex/psnfss/psnfss2e.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -207,6 +208,8 @@ packages.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
 mkdir -p %{buildroot}%{_texmf_updmap_d}
 cat > %{buildroot}%{_texmf_updmap_d}/psnfss <<EOF
 Map charter.map
