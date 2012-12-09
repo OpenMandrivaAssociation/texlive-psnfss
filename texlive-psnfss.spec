@@ -201,3 +201,17 @@ Map fpls.map
 Map pazo.map
 Map utopia.map
 EOF
+
+
+%changelog
+* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 9.2a-2
++ Revision: 755151
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 9.2a-1
++ Revision: 719324
+- texlive-psnfss
+- texlive-psnfss
+- texlive-psnfss
+- texlive-psnfss
+
