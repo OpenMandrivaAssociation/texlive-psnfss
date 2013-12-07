@@ -6,7 +6,7 @@
 # catalog-version 9.2a
 Name:		texlive-psnfss
 Version:	9.2a
-Release:	5
+Release:	6
 Summary:	Font support for common PostScript fonts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/required/psnfss
