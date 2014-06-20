@@ -1,12 +1,12 @@
-# revision 23394
+# revision 33946
 # category Package
 # catalog-ctan /macros/latex/required/psnfss
-# catalog-date 2011-05-30 10:00:44 +0200
+# catalog-date 2012-07-23 15:04:13 +0200
 # catalog-license lppl
 # catalog-version 9.2a
 Name:		texlive-psnfss
 Version:	9.2a
-Release:	7
+Release:	8
 Summary:	Font support for common PostScript fonts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/required/psnfss
@@ -18,9 +18,8 @@ BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
-Requires:	texlive-graphics
-
 Requires(post):	texlive-tetex
+Requires:	texlive-graphics
 
 %description
 Font definition files, macros and font metrics for freely-
@@ -201,17 +200,3 @@ Map fpls.map
 Map pazo.map
 Map utopia.map
 EOF
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 9.2a-2
-+ Revision: 755151
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 9.2a-1
-+ Revision: 719324
-- texlive-psnfss
-- texlive-psnfss
-- texlive-psnfss
-- texlive-psnfss
-
