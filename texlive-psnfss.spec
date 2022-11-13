@@ -1,19 +1,13 @@
-# revision 33946
-# category Package
-# catalog-ctan /macros/latex/required/psnfss
-# catalog-date 2012-07-23 15:04:13 +0200
-# catalog-license lppl
-# catalog-version 9.2a
 Name:		texlive-psnfss
-Version:	9.2a
-Release:	13
+Version:	54694
+Release:	1
 Summary:	Font support for common PostScript fonts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/required/psnfss
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/psnfss.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/psnfss.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/psnfss.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/psnfss.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/psnfss.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/psnfss.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -52,141 +46,26 @@ bundle as a whole is part of the LaTeX 'required' set of
 packages.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/fonts/map/dvips/psnfss/charter.map
-%{_texmfdistdir}/fonts/map/dvips/psnfss/fpls.map
-%{_texmfdistdir}/fonts/map/dvips/psnfss/pazo.map
-%{_texmfdistdir}/fonts/map/dvips/psnfss/psnfss.map
-%{_texmfdistdir}/fonts/map/dvips/psnfss/utopia.map
-%{_texmfdistdir}/tex/latex/psnfss/8rbch.fd
-%{_texmfdistdir}/tex/latex/psnfss/8rpag.fd
-%{_texmfdistdir}/tex/latex/psnfss/8rpbk.fd
-%{_texmfdistdir}/tex/latex/psnfss/8rpcr.fd
-%{_texmfdistdir}/tex/latex/psnfss/8rphv.fd
-%{_texmfdistdir}/tex/latex/psnfss/8rpnc.fd
-%{_texmfdistdir}/tex/latex/psnfss/8rppl.fd
-%{_texmfdistdir}/tex/latex/psnfss/8rptm.fd
-%{_texmfdistdir}/tex/latex/psnfss/8rput.fd
-%{_texmfdistdir}/tex/latex/psnfss/8rpzc.fd
-%{_texmfdistdir}/tex/latex/psnfss/avant.sty
-%{_texmfdistdir}/tex/latex/psnfss/bookman.sty
-%{_texmfdistdir}/tex/latex/psnfss/chancery.sty
-%{_texmfdistdir}/tex/latex/psnfss/charter.sty
-%{_texmfdistdir}/tex/latex/psnfss/courier.sty
-%{_texmfdistdir}/tex/latex/psnfss/helvet.sty
-%{_texmfdistdir}/tex/latex/psnfss/mathpazo.sty
-%{_texmfdistdir}/tex/latex/psnfss/mathpple.sty
-%{_texmfdistdir}/tex/latex/psnfss/mathptm.sty
-%{_texmfdistdir}/tex/latex/psnfss/mathptmx.sty
-%{_texmfdistdir}/tex/latex/psnfss/newcent.sty
-%{_texmfdistdir}/tex/latex/psnfss/omlbch.fd
-%{_texmfdistdir}/tex/latex/psnfss/omlpag.fd
-%{_texmfdistdir}/tex/latex/psnfss/omlpbk.fd
-%{_texmfdistdir}/tex/latex/psnfss/omlpcr.fd
-%{_texmfdistdir}/tex/latex/psnfss/omlphv.fd
-%{_texmfdistdir}/tex/latex/psnfss/omlpnc.fd
-%{_texmfdistdir}/tex/latex/psnfss/omlppl.fd
-%{_texmfdistdir}/tex/latex/psnfss/omlptm.fd
-%{_texmfdistdir}/tex/latex/psnfss/omlptmcm.fd
-%{_texmfdistdir}/tex/latex/psnfss/omlput.fd
-%{_texmfdistdir}/tex/latex/psnfss/omlpzc.fd
-%{_texmfdistdir}/tex/latex/psnfss/omlzplm.fd
-%{_texmfdistdir}/tex/latex/psnfss/omlzpple.fd
-%{_texmfdistdir}/tex/latex/psnfss/omlztmcm.fd
-%{_texmfdistdir}/tex/latex/psnfss/omsbch.fd
-%{_texmfdistdir}/tex/latex/psnfss/omspag.fd
-%{_texmfdistdir}/tex/latex/psnfss/omspbk.fd
-%{_texmfdistdir}/tex/latex/psnfss/omspcr.fd
-%{_texmfdistdir}/tex/latex/psnfss/omsphv.fd
-%{_texmfdistdir}/tex/latex/psnfss/omspnc.fd
-%{_texmfdistdir}/tex/latex/psnfss/omsppl.fd
-%{_texmfdistdir}/tex/latex/psnfss/omsptm.fd
-%{_texmfdistdir}/tex/latex/psnfss/omsput.fd
-%{_texmfdistdir}/tex/latex/psnfss/omspzc.fd
-%{_texmfdistdir}/tex/latex/psnfss/omspzccm.fd
-%{_texmfdistdir}/tex/latex/psnfss/omszplm.fd
-%{_texmfdistdir}/tex/latex/psnfss/omszpple.fd
-%{_texmfdistdir}/tex/latex/psnfss/omsztmcm.fd
-%{_texmfdistdir}/tex/latex/psnfss/omxpsycm.fd
-%{_texmfdistdir}/tex/latex/psnfss/omxzplm.fd
-%{_texmfdistdir}/tex/latex/psnfss/omxzpple.fd
-%{_texmfdistdir}/tex/latex/psnfss/omxztmcm.fd
-%{_texmfdistdir}/tex/latex/psnfss/ot1bch.fd
-%{_texmfdistdir}/tex/latex/psnfss/ot1pag.fd
-%{_texmfdistdir}/tex/latex/psnfss/ot1pbk.fd
-%{_texmfdistdir}/tex/latex/psnfss/ot1pcr.fd
-%{_texmfdistdir}/tex/latex/psnfss/ot1phv.fd
-%{_texmfdistdir}/tex/latex/psnfss/ot1pnc.fd
-%{_texmfdistdir}/tex/latex/psnfss/ot1ppl.fd
-%{_texmfdistdir}/tex/latex/psnfss/ot1pplj.fd
-%{_texmfdistdir}/tex/latex/psnfss/ot1pplx.fd
-%{_texmfdistdir}/tex/latex/psnfss/ot1ptm.fd
-%{_texmfdistdir}/tex/latex/psnfss/ot1ptmcm.fd
-%{_texmfdistdir}/tex/latex/psnfss/ot1put.fd
-%{_texmfdistdir}/tex/latex/psnfss/ot1pzc.fd
-%{_texmfdistdir}/tex/latex/psnfss/ot1zplm.fd
-%{_texmfdistdir}/tex/latex/psnfss/ot1zpple.fd
-%{_texmfdistdir}/tex/latex/psnfss/ot1ztmcm.fd
-%{_texmfdistdir}/tex/latex/psnfss/palatino.sty
-%{_texmfdistdir}/tex/latex/psnfss/pifont.sty
-%{_texmfdistdir}/tex/latex/psnfss/t1bch.fd
-%{_texmfdistdir}/tex/latex/psnfss/t1pag.fd
-%{_texmfdistdir}/tex/latex/psnfss/t1pbk.fd
-%{_texmfdistdir}/tex/latex/psnfss/t1pcr.fd
-%{_texmfdistdir}/tex/latex/psnfss/t1phv.fd
-%{_texmfdistdir}/tex/latex/psnfss/t1pnc.fd
-%{_texmfdistdir}/tex/latex/psnfss/t1ppl.fd
-%{_texmfdistdir}/tex/latex/psnfss/t1pplj.fd
-%{_texmfdistdir}/tex/latex/psnfss/t1pplx.fd
-%{_texmfdistdir}/tex/latex/psnfss/t1ptm.fd
-%{_texmfdistdir}/tex/latex/psnfss/t1put.fd
-%{_texmfdistdir}/tex/latex/psnfss/t1pzc.fd
-%{_texmfdistdir}/tex/latex/psnfss/times.sty
-%{_texmfdistdir}/tex/latex/psnfss/ts1bch.fd
-%{_texmfdistdir}/tex/latex/psnfss/ts1pag.fd
-%{_texmfdistdir}/tex/latex/psnfss/ts1pbk.fd
-%{_texmfdistdir}/tex/latex/psnfss/ts1pcr.fd
-%{_texmfdistdir}/tex/latex/psnfss/ts1phv.fd
-%{_texmfdistdir}/tex/latex/psnfss/ts1pnc.fd
-%{_texmfdistdir}/tex/latex/psnfss/ts1ppl.fd
-%{_texmfdistdir}/tex/latex/psnfss/ts1pplj.fd
-%{_texmfdistdir}/tex/latex/psnfss/ts1pplx.fd
-%{_texmfdistdir}/tex/latex/psnfss/ts1ptm.fd
-%{_texmfdistdir}/tex/latex/psnfss/ts1put.fd
-%{_texmfdistdir}/tex/latex/psnfss/ts1pzc.fd
-%{_texmfdistdir}/tex/latex/psnfss/ufplm.fd
-%{_texmfdistdir}/tex/latex/psnfss/ufplmbb.fd
-%{_texmfdistdir}/tex/latex/psnfss/upsy.fd
-%{_texmfdistdir}/tex/latex/psnfss/upzd.fd
-%{_texmfdistdir}/tex/latex/psnfss/utopia.sty
+%{_texmfdistdir}/fonts/map/dvips/psnfss
+%{_texmfdistdir}/tex/latex/psnfss
 %_texmf_updmap_d/psnfss
-%doc %{_texmfdistdir}/doc/latex/psnfss/00readme.txt
-%doc %{_texmfdistdir}/doc/latex/psnfss/changes.txt
-%doc %{_texmfdistdir}/doc/latex/psnfss/manifest.txt
-%doc %{_texmfdistdir}/doc/latex/psnfss/psfonts.pdf
-%doc %{_texmfdistdir}/doc/latex/psnfss/psnfss2e.pdf
-%doc %{_texmfdistdir}/doc/latex/psnfss/test/mathtest.tex
-%doc %{_texmfdistdir}/doc/latex/psnfss/test/pitest.tex
-%doc %{_texmfdistdir}/doc/latex/psnfss/test/test0.tex
-%doc %{_texmfdistdir}/doc/latex/psnfss/test/test1.tex
-%doc %{_texmfdistdir}/doc/latex/psnfss/test/test2.tex
-%doc %{_texmfdistdir}/doc/latex/psnfss/test/test3.tex
+%doc %{_texmfdistdir}/doc/latex/psnfss
 #- source
-%doc %{_texmfdistdir}/source/latex/psnfss/psfonts.dtx
-%doc %{_texmfdistdir}/source/latex/psnfss/psfonts.ins
-%doc %{_texmfdistdir}/source/latex/psnfss/psnfss2e.tex
+%doc %{_texmfdistdir}/source/latex/psnfss
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
