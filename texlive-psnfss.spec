@@ -3,7 +3,7 @@ Version:	54694
 Release:	2
 Summary:	Font support for common PostScript fonts
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/required/psnfss
+URL:		https://www.ctan.org/tex-archive/macros/latex/required/psnfss
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/psnfss.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/psnfss.doc.r%{version}.tar.xz
